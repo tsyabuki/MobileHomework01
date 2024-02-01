@@ -9,6 +9,7 @@ public class TurretController : MonoBehaviour
     [SerializeField] private GameObject _aimIndicator;
 
     public float FireCooldown { get; set; } = .5f;
+    public float FireCooldownStart; //Fire cooldown before powerups
 
     public bool IsReadyToFire { get; private set; } = true;
 
@@ -18,6 +19,11 @@ public class TurretController : MonoBehaviour
     private void Awake()
     {
         _camera = Camera.main;
+    }
+
+    private void Start()
+    {
+        FireCooldownStart = FireCooldown;
     }
 
     private void TrackCooldown()

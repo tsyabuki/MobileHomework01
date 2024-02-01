@@ -363,3 +363,5 @@ MonoBehaviour:
   _deathSound: {fileID: 8300000, guid: 3e3e3e5716c2533409755571490cc2c4, type: 3}
   _hitSound: {fileID: 8300000, guid: eeb3bcaf9a1e08b4ca2540b8b4157f6b, type: 3}
   MoveSpeed: 0.05
+  _droppedBuff: {fileID: 3822000612155049199, guid: 0dbb74ae12dd58d48a680a0649747dbe,
+    type: 3}
